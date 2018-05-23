@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "545614214500",
+    "firebase_url": "https://tc6-ximenabolannos.firebaseio.com",
+    "project_id": "tc6-ximenabolannos",
+    "storage_bucket": "tc6-ximenabolannos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545614214500:android:98884e335ed22d24",
+        "android_client_info": {
+          "package_name": "com.example.ximena.tc6_ximenabolannos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545614214500-f2nchskstm4u5iqhogmc5q7b26gg4rui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJaFxAv6elpQvst-045OfDs3XnWWE87qE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
