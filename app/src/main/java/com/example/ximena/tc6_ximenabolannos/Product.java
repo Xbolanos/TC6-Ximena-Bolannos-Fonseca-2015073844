@@ -9,6 +9,8 @@ public final class Product {
     public String price;
     public String description;
     public String image;
+    public String id;
+    public String userid;
 
     public Product(String name, String price, String description, String image) {
         this.name = name;
@@ -17,8 +19,24 @@ public final class Product {
         this.image = image;
     }
 
+    public String getUserid() {
+        return userid;
+    }
+
+    public void setUserid(String userid) {
+        this.userid = userid;
+    }
+
     public Product() {
 
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {

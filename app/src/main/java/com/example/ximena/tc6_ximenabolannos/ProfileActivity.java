@@ -58,7 +58,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         }
 
         //getting current user
-        FirebaseUser user = firebaseAuth.getCurrentUser();
+        final FirebaseUser user = firebaseAuth.getCurrentUser();
 
         //initializing views
 
@@ -84,8 +84,10 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
 
                 for(DataSnapshot postSnapshot: dataSnapshot.getChildren()){
                     Product post = postSnapshot.getValue(Product.class);
-
+                    post.setId(postSnapshot.getKey());
+                    post.setUserid(user.getUid());
                     products.add(post);
+
 
 
                 }
@@ -123,8 +125,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     public  void onclickAddView(View view){
-        //closing activity
-        finish();
+
         //starting login activity
         startActivity(new Intent(this, AddActivity.class));
 
